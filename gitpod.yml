@@ -1,0 +1,12 @@
+yaml
+tasks:
+  - name: Start Server
+    command: |
+      cd server
+      npm install
+      node server.js
+  - name: Start Client
+    command: |
+      cd client
+      npm install
+      npm run dev
